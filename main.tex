@@ -1,0 +1,184 @@
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstylef' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.9]{geometry}
+
+
+
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{G K}{Sudharshan}
+\title{CS13M050}
+\insti{Indian Institute of Technology Madras}
+\address{219}{Narmada}{IIT Madras}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+\phone[mobile]{+91-9970169385}                   
+% optional, remove / comment the line if not wanted
+%\phone[fixed]{+2~(345)~678~901}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+\email{sudharpun90@gmail.com}                               % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+\extrainfo{\texttt{DOB:} 16\textsuperscript{th} March 1990}                 % optional, remove / comment the line if not wanted
+\photo[64pt][0.4pt]{logo.png}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+%\makecvtitle
+\noindent
+\begin{minipage}{.70\textwidth}
+	  \makecvtitle{}
+\end{minipage}
+\begin{minipage}{.30\textwidth}
+  \centering{}
+  \includegraphics[height=3cm]{logo.png}
+\end{minipage}
+
+ \section{Objective}
+To be a part of an organization where the process of learning never ends and imagination takes its wings to unexplored skies and hard workers are always promoted.
+
+
+\section{Education}
+\begin{cvcolumns}
+  \cvcolumn[0.31]{Program}{
+  \item Master of Technology,\newline{Computer Science and Engineering}
+  \item Bachelor of Engineering,\newline{Computer Engineering}
+  \item XIIth Std. (CBSE),\newline{}
+  \item Xth Std. (CBSE)
+  }
+  \cvcolumn[0.29]{Institution}{
+  \item Indian Institute of Technology,\newline{Madras}
+  \item MES College Of Engineering\newline{Pune}
+  \item Kendriya Vidyalaya, \newline{Ganeshkhind,Pune}
+  \item Kendriya Vidyalaya, \newline{Ganeshkhind,Pune}
+  }
+  \cvcolumn[0.13]{\%/CGPA}{
+  \item  \textbf{~~~9.4}\newline{} 
+  \item  \textbf{~~~75.8\%}\newline{}
+  \item \textbf{~~~90.2\%}\newline{} 
+  \item \textbf{~~~83.8\%} 
+  }
+  \cvcolumn{Year of completion}{
+  \item ~~~~~~~~~~2015\newline{}                          
+  \item ~~~~~~~~~~2011\newline{}
+  \item ~~~~~~~~~~2007\newline{}
+  \item ~~~~~~~~~~2005
+  }
+\end{cvcolumns}
+
+\section{Scholastic Achievements}
+\cvlistitem {Won Second Prize for Code Red Contest in Solutions’10 organized by Army Institute of Technology,Pune.}
+\cvlistitem {Participated and won Second prize for C/C++ and paper presentation Contest in Zest’08 conducted by the Association Of Computer Engineers (A.C.E.)}
+\cvlistitem {Secured college-first in F.Y. engineering}
+
+\section{Course Projects}
+\cventry{IIT Madras}{\httplink{https://github.com/sudhargk/datamining}}
+{1. Spotting of optimal business location }{January - April 2014}{}{A machine learning solution using the location based social networking data to identify the best location among the different locations suggested. 
+\newline{\textit{Highlights :}
+Implemented multiple regression techniques and achieved  81 \% accuracy on cross-validation.}
+\newline{}}
+
+\cventry{IIT Madras}{\httplink{https://github.com/sudhargk/parallelhmm}}
+{2. A parallel implementation of discrete Hidden Markov Model}{January - April 2014}{}{
+Implementation of two main aspects of HMM training which are forward evaluation and vitterbi alignment algorithm using Pthreads.
+\newline{\textit{Highlights :}
+Attained 2x speed up using four threads on a long input sequences.}
+\newline{}}
+
+
+
+\section{Working Experience}
+\cventry{Persistent System Private Limited, Pune}{  Senior Software Engineer}{1. Connector Development}{Feb 2014 - Jul 2014}{}{
+\textit{Scope : } 
+Build connectors for different platform (CRM, ERP and Social platforms) and  generate BI reports after data scraping. 
+\newline{\textif{Personal Contributions : } 
+Designed and built a generic parsing module to parse responses (XML,JSON,CSV) and generate relational data in a streaming manner helping client in agile development of connectors.
+}\newline{}
+\newline{}
+\newline{}
+\newline{}
+\newline{}}
+
+
+\cventry{Persistent System Private Limited, Pune}{  Software Engineer}{2. Contact Center Analytics}{Apr 2013 - Jan 2014}{}{
+\textit{Scope : }
+Predict the call volume in contact center which in turn help staffing of contact center workers. \newline{\textit{Personal Contributions : }
+Solved ad-hoc analytical queries on contact centre data and built regression model to predict call volumes.}
+\newline{}}
+
+\cventry{Persistent System Private Limited, Pune}{  Software Engineer}{3. Ticket breach prediction}{Sep 2012 - Mar 2013}{}{
+\textit{Scope : }Build a tool to help the call center dispatchers in  understanding whether a ticket created by the customers would breach the SLA or not.
+\newline{\textit{Personal Contribution : }
+Implemented new features like internationalization of all texts in the tool and exporting predictions results to excel. Also developed code for testing data from PMML. 
+}
+\newline{}}
+
+
+\section{Key Projects}
+\cventry{IIT, Madras}{\httplink{https://github.com/iitm-donlab/python-dnn}}{1. Deep Neural Net Toolbox}{Ongoing}{}
+{A python tool kit for implementation of state of art algorithms for fields like computer vision, automatic speech recognition. 
+\newline{\textit{Highlights : }Achieved state of art results on the MNIST dataset.}
+\newline{}}
+
+\cventry{MES College Of Engineering, Pune}{\httplink{https://github.com/sudhargk/sharespot}}{2. Sharespot}{May 2011}{}{
+An android application that integrates different sharing sites (Flickr, YouTube and Picasa) into a single mobile application.
+\newline{\textit{Highlights : }Allows configuration of multiple account, caching of media and parallel browsing.
+}
+\newline{}}
+
+\cventry{MES College Of Engineering, Pune}{\httplink{https://github.com/sudhargk/dead-stock-register}}{3. Online Dead Stock Register}{May 2009}{}{
+A management system that replaces the conventional bulky registers to hold the records of the dead stock of any institution.
+\newline{\textit{Highlights : }
+Authorization based on profile of the logged in user. Supports automatic and manual resolution of dead stock numbering.
+}
+\newline{}}
+
+
+\section{Skills and Tools}
+\cvlistitem{Programming Languages - C/C++, Java, Python, SQL, Shell scripting}
+\cvlistitem{Operating Systems - Linux, Windows}
+\cvlistitem{Applications and Tools - MySQl, vi Editor}
+\cvlistitem{Machine learning Tools - Matlab, libSVM, Weka}
+
+\section{Interested in}
+\cvlistitem{Listening to Music}
+\cvlistitem{Playing Cricket, Table Tennis}
+\cvlistitem{Reading books}
+
+
+\section{Declaration}
+I hereby declare that all the information given above is true to the best of my knowledge as on \today.
+
+
+%----------------------------------------------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------------------------------------------
+\end{document}
+
+
+%% end of file `template.tex'.
